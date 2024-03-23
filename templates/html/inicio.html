@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Hojas de Estilo -->
+	<link rel="stylesheet" href="{{url_for('static', path='css/welcome.css')}}">
+	<title>Bienvenidos a EDI</title>
+</head>
+<body>
+
+<header>
+</header>
+
+<div id="cabecera">
+    <div id="foto-profeduilio">
+        <img src="{{url_for('static', path='img/profeduilio.jpg')}}">    
+    </div>
+	<div id="tres-areas">
+        <div id="mate-prog">
+            <h3>Matemáticas | Programación</h3>
+        </div>
+        <div id="intel-artif">
+            <h3>Inteligencia Artificial</h3>
+        </div>
+        <div id="profe-duilio">
+            <h2>PROFEDUILIO</h2>
+        </div>
+    </div>
+</div>
+
+
+<nav id="menu">
+	<ul>
+		<li class="navega">HOME</li>
+		<li class="navega">DNI</li>
+		<li class="navega">Inventario</li>
+		<li class="navega">Facturas</li>
+		<li class="navega">Reconoc. Facial</li>
+	</ul>
+</nav>
+
+
+<article id="escoge">
+	<p>Por favor, toca tu foto o avatar.</p>
+	<p>Si no la encuentras solicita invitación.</p>
+	<p>Solo escribe por WhatsApp al +51 974089434</p>
+</article>
+
+
+<section id="fotos">
+	<!-- 1ra fila de fotos - invitados -->
+	<div class="invitados">
+		<h5 class="entidad"> nombre_invitado </h5>
+		<img class="foto-invitado" src="{{url_for('static', path='img/IVAN-T.jpg')}}">
+		<h4 class="entidad">Entidad</h4>
+	</div>
+	<div class="invitados">
+		<h5 class="entidad"> nombre_invitado </h5>
+		<img class="foto-invitado" src="{{url_for('static', path='img/CARLOS-R.jpg')}}">
+		<h4 class="entidad">Entidad</h4>
+	</div>
+	<div class="invitados">
+		<h5 class="entidad"> nombre_invitado </h5>
+		<img class="foto-invitado" src="{{url_for('static', path='img/images-3.jpeg')}}">
+		<h4 class="entidad">Entidad</h4>
+	</div>
+	<!-- 2da fila de fotos - invitados -->
+
+	<div class="invitados">
+		<h5 class="entidad"> nombre_invitado </h5>
+		<img class="foto-invitado" src="{{url_for('static', path='img/WILLY-M.jpg')}}">
+		<h4 class="entidad">Entidad</h4>
+	</div>
+	<div class="invitados">
+		<h5 class="entidad"> nombre_invitado </h5>
+		<img class="foto-invitado" src="{{url_for('static', path='img/GARY-C.jpg')}}">
+		<h4 class="entidad">Entidad</h4>
+	</div>
+	<div class="invitados">
+		<h5 class="entidad"> nombre_invitado </h5>
+		<img class="foto-invitado" src="{{url_for('static', path='img/images-14.jpeg')}}">
+		<h4 class="entidad">Entidad</h4>
+	</div>
+
+</section>
+
+
+<section id="formul">
+	
+
+</section>
+
+<footer id="pie">
+	<h6>Powered by</h6>
+	<h5>&copy;2024 - Duilio Restuccia</h5>
+</footer>
+
+</body>
+</html>
