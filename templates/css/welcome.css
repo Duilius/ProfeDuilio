@@ -32,14 +32,16 @@ ESTILO CABECERA
 		height: auto;
 		text-align: center;
 	}
-		#mate-prog{grid-template-areas: mate-prog; letter-spacing: 3px; line-height: 1px;}
+		#mate-prog{grid-template-areas: mate-prog; letter-spacing: 2px; line-height: 1px;}
 		#intel-artif{grid-template-areas: intel-artif; line-height: 1px;}
 		#profe-duilio{grid-template-areas: profe-duilio;}
+
+
 /*
 ESTILO nav
 */
 #menu{
-	width: 80%;
+	width: 98%;
 	margin: 0px auto;
 	background: #0f2e29;
 	color: #3EB489;
@@ -54,8 +56,51 @@ ESTILO nav
 	}
 
 /*
+ESTILO #ebook-free
+*/
+#ebook-free{
+	/*border:1px solid rgba(255, 255, 255, 0.25);*/
+	text-align: center;
+}
+	#ebook-div{margin: 0px auto; text-align: center; padding-top: 40px;}
+	#div-boton-descarga{
+		padding-top: 20px;
+		text-align: center;
+		margin-top: 10px;
+	}
+	#boton-descargar{
+		color:white;
+		padding:16px;
+		border:1px solid white;
+		font-weight: 700;
+	}
+
+/*
+ESTILO section#dudas
+*/
+#dudas{
+	margin-top: 60px;
+	text-align: center;
+}
+	#dudas h4{ font-size: 1.75rem;}
+/*
 ESTILO article#bienvenido
 */
+
+/*
+ESTILO section#que-debes-saber
+*/
+#que-debes-saber{
+	width: 90%;
+	margin:60px auto;
+	border: 1px solid rgba(255, 255, 255, 0.25);
+	text-align: center;
+	padding-bottom: 25px;
+	padding-top: 45px;
+}
+	#que-debes-saber> h4{ font-size: 1.55rem;font-weight: 700; color:#3EB489}
+
+
 #bienvenido{
 	text-align: center;
 	line-height: 10px;
@@ -68,7 +113,7 @@ ESTILO section#fotos
 */
 #motivo{
 	margin: 0px auto ;
-	width: 80%;
+	width: 98%;
 	text-align: center;
 	border:1px solid rgba(255, 255, 255, 0.25);
 	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -83,7 +128,7 @@ ESTILO article#escoge
 */
 #escoge{
 	margin: 80px auto ;
-	width: 80%; min-height: 90px;
+	width: 98%; min-height: 90px;
 	text-align: center;
 	line-height: 2px;
 	border:1px solid #262626;
@@ -102,7 +147,7 @@ ESTILO section#fotos
 	column-gap: 10px;
 	grid-auto-rows: auto;
 	margin: -30px auto;
-	width: 80%;
+	width: 98%;
 	/*border:1px solid rgba(255, 255, 255, 0.35);*/
 	border-radius: 6px;
 	place-content: center;
