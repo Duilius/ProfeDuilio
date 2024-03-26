@@ -18,6 +18,7 @@ ESTILO CABECERA
 		border: 1px solid red;
 		display: grid;
 		place-content: center;
+		font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	}
 		#foto-profeduilio img{
 			width: 100%;
