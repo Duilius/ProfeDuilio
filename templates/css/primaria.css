@@ -1,0 +1,30 @@
+
+#quinto-p{
+    display: grid;
+    grid-template-rows: 30% 70%;
+    grid-template-areas: 
+        "quinto que-debes-saber-5"
+        "ejercicios-5"
+        "coleccion-5"
+        "descargar-5p"        
+        ;
+}
+    #quinto{
+        grid-template-areas: quinto;
+
+    }
+    #que-debes-saber-5{
+        grid-template-areas: que-debes-saber-5;
+    }
+    #ejercicios-5{
+        grid-template-areas: ejrcicios-5;
+    }
+    #coleccion-5{
+        grid-template-areas: coleccion-5;
+    }
+    #descargar-5p{
+        grid-template-areas: descargar-5p;
+    }
+    #bto-descarga-5p{
+        grid-template-areas: btn-descarga-5p;
+    }

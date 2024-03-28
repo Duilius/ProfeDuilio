@@ -98,9 +98,30 @@ ESTILO section#que-debes-saber
 	text-align: center;
 	padding-bottom: 25px;
 	padding-top: 45px;
+	display: grid;
+	place-content: center;
 }
+	#preguntas{
+		margin:0px auto;
+		text-align: center;
+		border: 1px solid rgba(255, 255, 255, 0.25);
+	}
 	#que-debes-saber> h4{ font-size: 1.55rem;font-weight: 700; color:#3EB489}
 
+	.saber{text-align: left;}
+/*
+ESTILO div#lema-profeduilio
+*/
+#lema-profeduilio{
+	text-align: center; color:cyan;
+}
+	
+	#lema-profeduilio h3{
+		line-height: 5px;
+	}
+	#lema-profeduilio h4{
+		letter-spacing: 1.75px; font-size: 1.1rem; line-height: 2px;
+	}
 
 #bienvenido{
 	text-align: center;

@@ -24,3 +24,31 @@ templates = Jinja2Templates(directory="templates")
 @app.get("/", response_class=HTMLResponse)
 async def inicio(request:Request):
     return templates.TemplateResponse("html/inicio.html", {"request":request})
+
+
+##########
+# PRIMARIA
+##########
+
+@app.get("/primaria", response_class=HTMLResponse)
+async def primaria(request:Request):
+    return templates.TemplateResponse("html/primaria.html", {"request":request})
+
+
+############
+# SECUNDARIA
+############
+
+@app.get("/secundaria", response_class=HTMLResponse)
+async def primaria(request:Request):
+    return templates.TemplateResponse("html/secundaria.html", {"request":request})
+
+
+
+##################
+# BLOG MATEMÁTICAS
+##################
+
+@app.get("/blog-matematicas", response_class=HTMLResponse)
+async def blog_matematicas(request:Request):
+    return templates.TemplateResponse("html/blog/blog-matematicas.html", {"request":request})
