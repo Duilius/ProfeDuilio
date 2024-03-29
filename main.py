@@ -44,6 +44,14 @@ async def primaria(request:Request):
     return templates.TemplateResponse("html/secundaria.html", {"request":request})
 
 
+############
+# SECUNDARIA
+############
+
+@app.get("/preuniversitaria", response_class=HTMLResponse)
+async def preuniversitaria(request:Request):
+    return templates.TemplateResponse("html/preuniversitaria.html", {"request":request})
+
 
 ##################
 # BLOG MATEMÁTICAS
@@ -52,3 +60,7 @@ async def primaria(request:Request):
 @app.get("/blog-matematicas", response_class=HTMLResponse)
 async def blog_matematicas(request:Request):
     return templates.TemplateResponse("html/blog/blog-matematicas.html", {"request":request})
+
+@app.get("/tips-estudiar-matematicas", response_class=HTMLResponse)
+async def tips(request:Request):
+    return templates.TemplateResponse("html/blog/tips-estudiar-matematicas.html", {"request":request})

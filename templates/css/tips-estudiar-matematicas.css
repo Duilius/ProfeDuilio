@@ -1,0 +1,72 @@
+body{
+    background: #262626; color:whitesmoke;
+}
+
+#content-tips{
+    width:98%;
+    margin:0px auto;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding-left: 10px;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+
+    grid-template-areas:
+    "titulo titulo"
+    "intro intro"
+    "mental cerebro"
+    "interes interes"
+    "clase dudas"
+    "organizate meterial-estudio";
+    gap:10px;   
+}
+#content-tips #titulo{
+    text-align: center;
+    grid-area: titulo;
+}
+
+.tema{
+    padding:10px;
+}
+
+#intro{
+    border:1px solid salmon;
+    grid-area: intro;
+}
+#img-intro{
+    grid-area: img-intro;
+    width: 50%;
+}
+
+#mental{
+    border:1px solid sandybrown;
+    grid-area: mental;
+}
+#cerebro{
+    border:1px solid sandybrown;
+    grid-area: cerebro;
+}
+#interes{
+    border:1px solid sandybrown;
+    grid-area:interes;
+}
+
+#clase{
+    border:1px solid sandybrown;
+        grid-area:clase;
+    }
+#dudas{
+    border:1px solid sandybrown;
+    grid-area:dudas;
+}
+
+#txt-organizate{
+    border:1px solid sandybrown;
+    grid-area:text-organizate;
+}
+#txt-material-estudio{
+    border:1px solid sandybrown;
+    grid-area:text-material-estudio;
+}
+

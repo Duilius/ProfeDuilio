@@ -4,121 +4,170 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Hojas de Estilo -->
-	<!--<link rel="stylesheet" href="{{url_for('static', path='css/welcome.css')}}">-->
-    <link rel="stylesheet" href="static/css/welcome.css">
+	<link rel="stylesheet" href="{{url_for('static', path='css/tips-estudiar-matematicas.css')}}">
+    <!--<link rel="stylesheet" href="static/css/welcome.css">-->
 	<title>ProfeDuilio | Matemáticas | Blog </title>
 </head>
 <body>
 
-<h1>Tips para Estudiar Matemáticas</h1>
+<div id="content-tips">
 
-<h2>1. Introducción</h2>
+    <div id="titulo">
+        <h1>Tips para Estudiar Matemáticas</h1>
+        <h3>Que sí funciona</h3>
+    </div>
+    
+<div id="intro" class="tema">
+    <div id="txt-intro">
+        <h2>1. INTRODUCCION</h2>
+        <p>
+            En esta guía aprenderás estrategias efectivas para abordar el estudio de las Matemáticas de manera más eficiente (sin perdida de tiempo) y divertida.
+        </p>
+    </div>
+
+    <div id="img-intro">
+        <img src="{{url_for( 'static', path='img/joven-estudiando-1.jpeg')}}" alt="Aprende Matemáticas con el ProfeDuilio" width="100%">
+    </div>
+</div><!--Fin div#intro-->
+
+<div id="mental" class="tema">
+    <div id="txt-mental">
+        <h2>2. Preparación Mental</h2>
+
+        <p>
+            Te diste cuenta que prestamos más atención a aquello que nos interesa:
+            <ul>
+                <li>Una nueva canción, si nos gusta, la recordamos en poco tiempo.</li>
+                <li>El nombre y los personajes de una nueva película no los olvidamos si nos gusta o nos parece interesante.</li>
+            </ul>
+        </p>
+    </div>
+    <div id="txt-cerebro">
+        <h3>Es muy útil hackear a nuestro cerebro</h3>
+        <p><i>Dile</i> o logra que tu cerebro se interese por los temas que necesitas aprender.</p>
+
+        <h4>¿Cómo Hackear a nuestro cerebro?</h4>
+        <p>
+            Con solo hacerte preguntas le estas diciendo a tu cerebro que el tema te interesa y éste empezará a "grabarlo" en tu memoria.
+        </p>
+        <p>
+            Si además, luego de biscar las respuestas las lees en voz alta (para ti mismo) entonces más oportunidad de recordar el tema tendrás.
+        </p>
+
+        <p>Con esta práctica necesitarás esforzarte un poco menos para entender las clases de matemáticas.</p>
+    </div><!--FIn div#rxt-cerebro-->        
+
+    <div id="txt-interes">
+        <h4>2.1-Genera interés</h4>
+        <p>
+            <b>Muy útil:</b> Lee en voz alta y de pie el título de cada tema o de aquello que necesitas estudiar.
+        </p>    
+        <p>
+            Inmediatamente haste todas las preguntas posibles.<br>
+            Busca la respuesa a cada pregunta en Google o, mucho mejor aún, en ChatGPT.<br>
+            Ambos son gratis!!!
+        </p>
+
+    </div>
+</div><!--Fin div#mental-->
+    
+<div id="durante-clase" class="tema">
+
+    <div id="txt-clase">
+        <h2>3.-DURANTE LA CLASE</h2>
+
+        <h4>3.1 Realiza preguntas o comentarios sobre lo que ya sabes del tema.</h4>
+
+        <p>Si haces esto ya estás por muy buen camino.</p>
+
+        <h4>3.2 Atención y toma de apuntes</h4>
+        <p>
+            Cuando resuelvas ejercicios y te equivoques no borres los erroes.<br>
+            Resalta el error y la corrección.
+        </p>    
+    </div>
+
+    <div id="txt-dudas">
+
+        <h4>3.3 Aclaración de dudas:</h4>
+
+    </div>
+</div><!--Fin div#durante-clase-->
+
+<div id="organizacion">
+    <div id="txt-organizate" class="tema">
+        <h4>ORGANIZACION Y MATERIAL DE ESTUDIO</h4>
+
+        <p>
+            Invierte el tiempo necesario, mucho antes de la clase, o mejor aún
+            antes del iniciio del año escolar, en seleccionar material de estudio:
+            libros, exámenes de otros colegios o de años anteriores, blogs o videos
+            (canales de Youtube o de cualquier otra Red Social)
+        </p>
+
+        <p>
+            De esa manera, el día que vas a estudiar (teoría y práctica) usarás
+            el tiempo programado en estudiar y no en buscar bibliografía.
+        </p>
+    </div>
+
+    <div id="txt-material-esudio">
+        <h5>Material de Estudio</h5>
+
+    </div>    
+</div><!--Fin div#organizacion-->
+
+<div id="examenes" class="tema">
+    <div id="exanebes">
+        <h2>5.-PREPARACIÓN PARA EXÁMENES</h2>
+
+        <p>Haz un resumen de los temas de los que serás evaluados, incluyendo los
+        tipos de ejercicios que se resolvieron en clase.
+        </p>
+
+        <p>
+        Busca ejercicios de cada tipo de los que se resolvieron en clase y 
+        practica mucho.
+        </p>
+    </div>
+    
+    <div id="txt-espacio">
+        <h3>Espacio de Trabajo/Estudio</h3>
+        <p><b>Cualquier sitio estará bien.</b></p>
+            <ol>
+                <li>Limpio: no solo higiene, también orden</li>
+                <li>Tranquilo: sin ruidos, en la medida de lo posible</li>
+                <li>Cómodo:dentro de lo posible y no tanto que provoque sueño</li>
+                <li>Aislado: donde nadie o muy pocos transiten</li>
+            </ol>
+        </p>
+    </div>
+
+    <div id="txt-horario">
+        <b>Horario</b>
+        <ol>
+            <li>El mismo: siempre a la misma hora. Puede ser en 2 o 3 bloques cada día</li>
+            <p>Según tus actividades y otros deberes, puedes estudiar y/o practicar en diferentes horarios.</p>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ol>
+    </div>
+    
+</div><!--Fin #examenes-->
+
+
 <p>
-    En esta guía aprenderás estrategias efectivas para abordar el estudio de las Matemáticas de manera más eficiente (sin perdida de tiempo) y divertida.
-</p>
-
-<h2>2. Preparación Mental</h2>
-
-<p>
-    Te diste cuenta que prestamos más atención a aquello que nos interesa:
-    <ul>
-        <li>Una nueva canción, si nos gusta, la recordamos en poco tiempo.</li>
-        <li>El nombre y los personajes de una nueva película no los olvidamos si nos gusta o nos parece interesante.</li>
-    </ul>
-</p>
-
-<h3>Es muy útil hackear a nuestro cerebro</h3>
-<p><i>Dile</i> o logra que tu cerebro se interese por los temas que necesitas aprender.</p>
-
-<h4>¿Cómo Hackear a nuestro cerebro?</h4>
-<p>
-    Con solo hacerte preguntas le estas diciendo a tu cerebro que el tema te interesa y éste empezará a "grabarlo" en tu memoria.
-</p>
-<p>
-    Si además, luego de biscar las respuestas las lees en voz alta (para ti mismo) entonces más oportunidad de recordar el tema tendrás.
-</p>
-
-<p>Con esta práctica necesitarás esforzarte un poco menos para entender las clases de matemáticas.</p>
-
-<h4>2.1-Genera interés</h4>
-<p>
-    <b>Muy útil:</b> Lee en voz alta y de pie el título de cada tema o de aquello que necesitas estudiar.
-</p>    
-<p>
-    Inmediatamente haste todas las preguntas posibles.<br>
-    Busca la respuesa a cada pregunta en Google o, mucho mejor aún, en ChatGPT.<br>
-    Ambos son gratis!!!
-</p>
-
-
-<h2>3.-DURANTE LA CLASE</h2>
-
-<h4>3.1 Realiza preguntas o comentarios sobre lo que ya sabes del tema.</h4>
-
-<p>Si haces esto ya estás por muy buen camino.</p>
-
-<h4>3.2 Atención y toma de apuntes</h4>
-<p>
-    Cuando resuelvas ejercicios y te equivoques no borres los erroes.<br>
-    Resalta el error y la corrección.
-</p>    
-
-<h4>3.3 Aclaración de dudas:</h4>
-
-
-ORGANIZACION Y MATERIAL DE ESTUDIO
-----------------------------------
-<p>
-    Invierte el tiempo necesario, mucho antes de la clase, o mejor aún
-    antes del iniciio del año escolar, en seleccionar material de estudio:
-    libros, exámenes de otros colegios o de años anteriores, blogs o videos
-    (canales de Youtube o de cualquier otra Red Social)
-</p>
-
-<p>
-    De esa manera, el día que vas a estudiar (teoría y práctica) usarás
-    el tiempo programado en estudiar y no en buscar bibliografía.
-</p>
-
-<h2>5.-PREPARACIÓN PARA EXÁMENES</h2>
-
-<p>Haz un resumen de los temas de los que serás evaluados, incluyendo los
-tipos de ejercicios que se resolvieron en clase.
-</p>
-
-<p>
-Busca ejercicios de cada tipo de los que se resolvieron en clase y 
-practica mucho.
-</p>
-
-
-<h3>Espacio de Trabajo/Estudio</h3>
-<p><b>Cualquier sitio estará bien.</b></p>
-    <ol>
-        <li>Limpio: no solo higiene, también orden</li>
-        <li>Tranquilo: sin ruidos, en la medida de lo posible</li>
-        <li>Cómodo:dentro de lo posible y no tanto que provoque sueño</li>
-        <li>Aislado: donde nadie o muy pocos transiten</li>
-    </ol>
-<p>
-<p>
-    <b>Horario</b>
-    <ol>
-        <li>El mismo: siempre a la misma hora. Puede ser en 2 o 3 bloques cada día</li>
-        <p>Según tus actividades y otros deberes, puedes estudiar y/o practicar en diferentes horarios.</p>
-        <li></li>
-        <li></li>
-        <li></li>
-    </ol>
-</p>
-
     Supiste de este niño:<br>
     En Trujillo, un niño que estudiaba en la calle bajo la luz de un poste ha sido distinguido como embajador de la lectura. <br>Su dedicación y esfuerzo al estudiar en condiciones difíciles han llamado la atención y han inspirado a muchos. ¡Un verdadero ejemplo de perseverancia! 📚🌟
 </p>
 
 
+</div><!--Fin div#content-tips -->
+
 <header>
 </header>
+
 
 
 </body>
