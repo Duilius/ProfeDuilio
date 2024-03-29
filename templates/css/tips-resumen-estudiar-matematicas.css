@@ -1,0 +1,72 @@
+body{background: #262626; color:whitesmoke;}
+.container{
+    margin:0px auto;
+    width: 98%;
+    border:1px solid rgba(255,255,255,0.11);
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "cero-1"
+    "mentalidad-2"
+    "espacio-3"
+    "material-4"
+    "durante-5"
+    "fuera-6"
+    "examenes-7"
+    ;
+    gap:30px;
+}
+.container div{
+    border:1px solid olive; padding: 0px 5px 0px 5px;
+}
+
+/*
+Elementos
+*/
+.bx{font-size: 4rem;}
+.numtip{font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 7rem;
+}
+
+
+
+
+/*
+DIVs DE TIPS
+*/
+.cero-1{
+    grid-area: cero-1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(5, auto);
+    min-height: auto;
+}
+    #numtip{grid-area: numtip; grid-column:1 / 1 ; grid-row: 1 / 3; border:1px dotted cyan; display: grid; justify-content: center; align-content: center;}
+    #tittip{grid-area: tittip; grid-column:2 / -1; grid-row:1 / 3; border:1px solid yellow; padding-bottom: 40px;}
+    #restip{grid-area: restip; grid-column:2 / -1; grid-row:2 / 3; border:1px solid orange;}
+    #icotip{grid-area: icotip; grid-column:1 / 1; grid-row:4 / -1; border:1px solid pink;}
+    #lemtip{grid-area: lemtip; grid-column:2 / -1; grid-row: 4 / -1; border:1px solid white; display: grid; justify-content: left; align-content: center;}
+
+.mentalidad-2{
+    grid-area: mentalidad-2;
+}
+
+.espacio-3{
+    grid-area: espacio-3;
+}
+
+.material-4{
+    grid-area: material-4;
+}
+
+.durante-5{
+    grid-area: durante-5;
+}
+
+.fuera-6{
+    grid-area: fuera-6;
+}
+
+.examenes-7{
+    grid-area: examenes-7;
+}

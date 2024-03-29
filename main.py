@@ -61,6 +61,10 @@ async def preuniversitaria(request:Request):
 async def blog_matematicas(request:Request):
     return templates.TemplateResponse("html/blog/blog-matematicas.html", {"request":request})
 
-@app.get("/tips-estudiar-matematicas", response_class=HTMLResponse)
+@app.get("/tips-resumen-estudiar-matematicas", response_class=HTMLResponse)
 async def tips(request:Request):
-    return templates.TemplateResponse("html/blog/tips-estudiar-matematicas.html", {"request":request})
+    return templates.TemplateResponse("html/blog/tips-resumen-estudiar-matematicas.html", {"request":request})
+
+@app.get("/tips-completo-estudiar-matematicas", response_class=HTMLResponse)
+async def tips(request:Request):
+    return templates.TemplateResponse("html/blog/tips-completo-estudiar-matematicas.html", {"request":request})
