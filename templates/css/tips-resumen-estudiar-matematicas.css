@@ -28,6 +28,7 @@ body{background: #262626; color:whitesmoke;}
     grid-template-rows: auto;
     grid-template-areas: 
     "titulo"
+    "explica"
     "cero-1"
     "mentalidad-2"
     "espacio-3"
@@ -39,13 +40,15 @@ body{background: #262626; color:whitesmoke;}
     gap:30px;
 }
 .container div{
-    border:1px solid olive; padding: 0px 5px 0px 5px;
+    border:1px solid olive; padding: 0px 5px 0px 5px;    padding: 5px;
 }
 
 #titulo{margin-top: 0px;}
 #titulo h1{font-size: 3.5rem; color:cyan; text-align: center;}
 #titulo h5{text-align: center; font-size: 1.25rem; line-height: 2px;}
 
+#explica{text-align: center;}
+    #explica p{font-style: oblique; font-weight: 400; letter-spacing: 1px;}
 /*
 Elementos
 */
@@ -54,14 +57,16 @@ Elementos
         font-size: 9rem;
             background: rgba(35, 35, 35, 1);
             text-shadow: 0px 0px 5px rgba(255, 255, 255, 1), 
-                         0px 0px 10px rgba(255, 255, 255, 1), 
-                         0px 0px 15px rgba(255, 255, 255, 1),
-                         0px 0px 20px rgba(219, 112, 147, 1),
-                         0px 0px 30px rgba(219, 112, 147, 1),
-                         0px 0px 40px rgba(219, 112, 147, 1),
-                         0px 0px 55px rgba(219, 112, 147, 1),
-                         0px 0px 75px rgba(219, 112, 147, 1);
+                        0px 0px 10px rgba(255, 255, 255, 1), 
+                        0px 0px 15px rgba(255, 255, 255, 1),
+                        0px 0px 20px rgba(219, 112, 147, 1),
+                        0px 0px 30px rgba(219, 112, 147, 1),
+                        0px 0px 40px rgba(219, 112, 147, 1),
+                        0px 0px 55px rgba(219, 112, 147, 1),
+                        0px 0px 75px rgba(219, 112, 147, 1);
+        background: #444;
 }
+    .numtip p{font-size: 1.5rem;}
 .clave{
     padding: 2px 6px 2px 6px;
     border:1px solid palevioletred;
@@ -74,6 +79,30 @@ Elementos
 }
 
 
+#redes li{
+		display: inline-block;
+		margin-right: 10px;
+		padding: 4px;
+}
+    #redes li i{font-size: 3rem;}
+
+#profes{border: 1px solid rgba(135, 135, 135, 0.15); padding-top: 5px;}
+#profes li{
+        display: inline;
+		margin-right: 40px;
+		padding: 2px;
+}    
+    #profes li img{display: inline-block; width: 12%;border-radius: 50%;}
+
+    #profes li:first-child img{border: 2px solid white;}
+
+#nomprofes{margin-top: -20px;}
+#nomprofes li{
+    display: inline-block;
+    margin-right: 45px;
+    padding: 6px;
+    line-height: 15px;
+}
 
 /*
 DIVs DE TIPS
@@ -87,27 +116,66 @@ DIVs DE TIPS
 }
     #numtip-1{grid-area: numtip; grid-column:1 / 1 ; grid-row: 1 / 3; border:1px dotted #555; display: grid; justify-content: center; align-content: center;}
     #tittip{grid-area: tittip; grid-column:2 / -1; grid-row:1 / 2; border:1px solid #555; display: grid;justify-content: center; align-content: center;}
-    #restip{grid-area: restip; grid-column:2 / -1; grid-row:2 / 3; border:1px solid #555;}
-    #lemtip{grid-area: lemtip; grid-column:1 / -1; grid-row: 4 / -1; border:2px solid #555; display: grid; justify-content: left; align-content: center;}
+    #restip{grid-area: restip; grid-column:2 / -1; grid-row:2 / 3; border:1px solid #555; padding-left:10px;}
+    #lemtip{grid-area: lemtip; grid-column:1 / -1; grid-row: 4 / -1; border:2px solid #555; display: grid; justify-content: left; align-content: center; padding-left:10px;}
 
     #lemtip p{ font-size: 1.25rem;}
-    #tittip h3{color:white; letter-spacing: 3px;}
+    .tittip h3{color:white; letter-spacing: 3px;}
 
 .mentalidad-2{
     grid-area: mentalidad-2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(5, auto);
+    min-height: auto;    
 }
+    #numtip-2{grid-column:1 / 1 ; grid-row: 1 / 3; border:1px dotted #555; display: grid; justify-content: center; align-content: center;}
+    #img-mentalidad{grid-column:2 / -1 ; grid-row: 1 / 3; border:1px dotted #555; display: grid; justify-content: center; align-content: center;}
+    #tittip-2{grid-column:1 / 1; grid-row: 4 / 5; border:2px solid #555; display: grid; justify-content: left; align-content: center; padding-left:10px;}
+    #lemtip-2{grid-column:2 / -1; grid-row: 4 / 5; border:2px solid #555; display: grid; justify-content: left; align-content: center; padding-left:10px;}
+    #tiptip-2{grid-column:1 / -1; grid-row: 6 ; border:2px solid #555; display: grid; justify-content: left; align-content: center; padding-left:10px; background: rgb(53,69,82);}
+
+    #tiptip-2 p{font-weight: 500;}
+    #img-mentalidad img{border-radius: 40px;}
 
 .espacio-3{
     grid-area: espacio-3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(5, auto);
+    min-height: auto;    
 }
+    #numtip-3{grid-column:1 / 1 ; grid-row: 1 / 4; border:1px dotted #555; display: grid; justify-content: center; align-content: center;}
+    #tittip-3{grid-column:2 / -1; grid-row: 2 ; border:2px solid #555; display: grid; justify-content: center; align-content: center; padding-left:10px;}
+    #img-espacio{grid-column:2 / -1 ; grid-row: 3 / 4; border:1px dotted #555; display: grid; justify-content: center; align-content: center;}
+    #lemtip-3{grid-column:1 / -1; grid-row: 4 / 5; border:2px solid #555; display: grid; justify-content: left; align-content: center; padding-left:10px;}
+    #tiptip-3{grid-column:1 / -1; grid-row: 6 ; border:2px solid #555; display: grid; justify-content: left; align-content: center; padding-left:10px; background: rgb(53,69,82);}
+
+    #tiptip-3 p{font-weight: 500;}
+    #img-espacio img{border-radius: 40px;}
+    
 
 .material-4{
     grid-area: material-4;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(5, auto);
+    min-height: auto;    
 }
 
 .durante-5{
     grid-area: durante-5;
 }
+#numtip-4{grid-column:1 / 1 ; grid-row: 1 / 4; border:1px dotted #555; display: grid; justify-content: center; align-content: center;}
+#tittip-4{grid-column:2 / -1; grid-row: 2 ; border:2px solid #555; display: grid; justify-content: center; align-content: center; padding-left:10px;}
+#img-bibliografia{grid-column:2 / -1 ; grid-row: 3 / 4; border:1px dotted #555; display: grid; justify-content: center; align-content: center;}
+#lemtip-4{grid-column:1 / -1; grid-row: 4 / 5; border:2px solid #555; display: grid; justify-content: left; align-content: center; padding-left:10px;}
+#tiptip-4{grid-column:1 / -1; grid-row: 6 ; border:2px solid #555; display: grid; justify-content: left; align-content: center; padding-left:10px; background: rgb(23,37,62);}
+
+#tiptip-4 p{font-weight: 500;}
+#img-bibliografia img{border-radius: 40px;}
+
+
 
 .fuera-6{
     grid-area: fuera-6;
