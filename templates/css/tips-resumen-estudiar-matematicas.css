@@ -1,11 +1,33 @@
 body{background: #262626; color:whitesmoke;}
-.container{
+
+/*FONTS clases*/
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color:#000;
+  }
+
+  .hind-light {
+    font-family: "Hind", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  .hind-regular {
+    font-family: "Hind", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .container{
     margin:0px auto;
     width: 98%;
     border:1px solid rgba(255,255,255,0.11);
     display: grid;
     grid-template-rows: auto;
     grid-template-areas: 
+    "titulo"
     "cero-1"
     "mentalidad-2"
     "espacio-3"
@@ -20,14 +42,36 @@ body{background: #262626; color:whitesmoke;}
     border:1px solid olive; padding: 0px 5px 0px 5px;
 }
 
+#titulo{margin-top: 0px;}
+#titulo h1{font-size: 3.5rem; color:cyan; text-align: center;}
+#titulo h5{text-align: center; font-size: 1.25rem; line-height: 2px;}
+
 /*
 Elementos
 */
 .bx{font-size: 4rem;}
-.numtip{font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        font-size: 7rem;
+.numtip{
+        font-size: 9rem;
+            background: rgba(35, 35, 35, 1);
+            text-shadow: 0px 0px 5px rgba(255, 255, 255, 1), 
+                         0px 0px 10px rgba(255, 255, 255, 1), 
+                         0px 0px 15px rgba(255, 255, 255, 1),
+                         0px 0px 20px rgba(219, 112, 147, 1),
+                         0px 0px 30px rgba(219, 112, 147, 1),
+                         0px 0px 40px rgba(219, 112, 147, 1),
+                         0px 0px 55px rgba(219, 112, 147, 1),
+                         0px 0px 75px rgba(219, 112, 147, 1);
 }
+.clave{
+    padding: 2px 6px 2px 6px;
+    border:1px solid palevioletred;
+    color:white;
+    background: palevioletred;
+    letter-spacing: 2px;
+    text-align: center;
+    font-weight: 500;
 
+}
 
 
 
@@ -41,11 +85,13 @@ DIVs DE TIPS
     grid-template-rows: repeat(5, auto);
     min-height: auto;
 }
-    #numtip{grid-area: numtip; grid-column:1 / 1 ; grid-row: 1 / 3; border:1px dotted cyan; display: grid; justify-content: center; align-content: center;}
-    #tittip{grid-area: tittip; grid-column:2 / -1; grid-row:1 / 3; border:1px solid yellow; padding-bottom: 40px;}
-    #restip{grid-area: restip; grid-column:2 / -1; grid-row:2 / 3; border:1px solid orange;}
-    #icotip{grid-area: icotip; grid-column:1 / 1; grid-row:4 / -1; border:1px solid pink;}
-    #lemtip{grid-area: lemtip; grid-column:2 / -1; grid-row: 4 / -1; border:1px solid white; display: grid; justify-content: left; align-content: center;}
+    #numtip-1{grid-area: numtip; grid-column:1 / 1 ; grid-row: 1 / 3; border:1px dotted #555; display: grid; justify-content: center; align-content: center;}
+    #tittip{grid-area: tittip; grid-column:2 / -1; grid-row:1 / 2; border:1px solid #555; display: grid;justify-content: center; align-content: center;}
+    #restip{grid-area: restip; grid-column:2 / -1; grid-row:2 / 3; border:1px solid #555;}
+    #lemtip{grid-area: lemtip; grid-column:1 / -1; grid-row: 4 / -1; border:2px solid #555; display: grid; justify-content: left; align-content: center;}
+
+    #lemtip p{ font-size: 1.25rem;}
+    #tittip h3{color:white; letter-spacing: 3px;}
 
 .mentalidad-2{
     grid-area: mentalidad-2;

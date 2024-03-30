@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96">
+  <g id="_sm-a556_top4-feature_icon_02_camera" data-name="[sm-a556]top4-feature_icon_02_camera" transform="translate(-1166 -308)">
+    <rect id="사각형_2685" data-name="사각형 2685" width="96" height="96" transform="translate(1166 308)" fill="none"/>
+    <g id="moon" transform="translate(324.999 -172.949)">
+      <path id="패스_7202" data-name="패스 7202" d="M4930.362,3051.774l-.017.006a12.6,12.6,0,0,1-17.354-11.582,12.425,12.425,0,0,1,.758-4.286l.008-.02c.009-.024-.005-.034-.031-.024l-.022.009a12.532,12.532,0,1,0,16.667,15.951l.009-.024C4930.389,3051.781,4930.381,3051.766,4930.362,3051.774Z" transform="translate(-4008.5 -2537)" stroke="#000" stroke-miterlimit="10" stroke-width="2"/>
+    </g>
+    <g id="human" transform="translate(170.98 -177.959)">
+      <path id="패스_7203" data-name="패스 7203" d="M2917.534,3263.837a10.767,10.767,0,1,1-10.767-10.767A10.766,10.766,0,0,1,2917.534,3263.837Z" transform="translate(-1875.096 -2735.012)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="4"/>
+      <path id="패스_7204" data-name="패스 7204" d="M2920.843,3312.241a16.671,16.671,0,0,0-33.342,0v6.252a.7.7,0,0,0,.695.695h31.953a.7.7,0,0,0,.695-.695Z" transform="translate(-1872.5 -2755.979)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="4"/>
+    </g>
+    <path id="패스_7206" data-name="패스 7206" d="M-12195.194-5793.083v-28h28" transform="translate(13367 6135)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+    <path id="패스_7209" data-name="패스 7209" d="M-12195.194-5793.083v-28h28" transform="translate(-10938.693 -5423.166) rotate(180)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+    <path id="패스_7207" data-name="패스 7207" d="M-12195.194-5793.083v-28h28" transform="translate(-4564.582 12509.111) rotate(90)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+    <path id="패스_7208" data-name="패스 7208" d="M-12195.194-5793.083v-28h28" transform="translate(6992.888 -11797.277) rotate(-90)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+  </g>
+</svg>
