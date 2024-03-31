@@ -86,24 +86,26 @@ Elementos
 }
     #redes li i{font-size: 3rem;}
 
-#profes{border: 1px solid rgba(135, 135, 135, 0.15); padding-top: 5px;}
+
+/*
 #profes li{
         display: inline;
 		margin-right: 40px;
 		padding: 2px;
-}    
+} 
+
     #profes li img{display: inline-block; width: 12%;border-radius: 50%;}
 
     #profes li:first-child img{border: 2px solid white;}
 
-#nomprofes{margin-top: -20px;}
+#nomprofes{margin-top: -20px; grid-area: nom-profes;}
 #nomprofes li{
     display: inline-block;
     margin-right: 45px;
     padding: 6px;
     line-height: 15px;
 }
-
+*/   
 /*
 DIVs DE TIPS
 */
@@ -136,6 +138,7 @@ DIVs DE TIPS
     #tiptip-2{grid-column:1 / -1; grid-row: 6 ; border:2px solid #555; display: grid; justify-content: left; align-content: center; padding-left:10px; background: rgb(53,69,82);}
 
     #tiptip-2 p{font-weight: 500;}
+    #hand-right{font-size: 1.75rem;}
     #img-mentalidad img{border-radius: 40px;}
 
 .espacio-3{
@@ -163,9 +166,6 @@ DIVs DE TIPS
     min-height: auto;    
 }
 
-.durante-5{
-    grid-area: durante-5;
-}
 #numtip-4{grid-column:1 / 1 ; grid-row: 1 / 4; border:1px dotted #555; display: grid; justify-content: center; align-content: center;}
 #tittip-4{grid-column:2 / -1; grid-row: 2 ; border:2px solid #555; display: grid; justify-content: center; align-content: center; padding-left:10px;}
 #img-bibliografia{grid-column:2 / -1 ; grid-row: 3 / 4; border:1px dotted #555; display: grid; justify-content: center; align-content: center;}
@@ -173,9 +173,71 @@ DIVs DE TIPS
 #tiptip-4{grid-column:1 / -1; grid-row: 6 ; border:2px solid #555; display: grid; justify-content: left; align-content: center; padding-left:10px; background: rgb(23,37,62);}
 
 #tiptip-4 p{font-weight: 500;}
-#img-bibliografia img{border-radius: 40px;}
+
+#solo-profes{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    align-content: center;
+    place-content: center;
+    justify-content: center;
+    grid-template-areas:
+    "profes"
+    "nomprofes";
+    padding-top: 40px;
+}
+
+#profes{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-items: center;
+    grid-template-areas:
+    "pfd pfj pfa pfu";
+}
+
+#nomprofes{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-items: center;
+    grid-template-areas:
+    "npfd npfj npfa npfu";
+    margin-top: -35px;
+    line-height: 15px;
+}
+
+#pfd{grid-area: pfd; width: 55%; border-radius:50%}
+#npfd{grid-area: npfd;}
+#pfj{grid-area: pfj; width: 55%; border-radius:50%}
+#npfj{grid-area: npfj;}
+#pfa{grid-area: pfa; width: 55%; border-radius:50%}
+#npfa{grid-area: npfa;}
+#pfu{grid-area: pfu; width: 55%; border-radius:50%}
+#npfu{grid-area: npfu;}
+
+#profes{border: 1px solid rgba(135, 135, 135, 0.15); padding-top: 5px;}
 
 
+.durante-5{
+    grid-area: durante-5;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(5, auto);
+    min-height: auto;    
+}
+
+#numtip-5{grid-column:1 / 1 ; grid-row: 1 / 4; border:1px dotted #555; display: grid; justify-content: center; align-content: center;}
+#tittip-5{grid-column:2 / -1; grid-row: 2 ; border:2px solid #555; display: grid; justify-content: center; align-content: center; padding-left:10px;}
+#img-bibliografia{grid-column:2 / -1 ; grid-row: 3 / 4; border:1px dotted #555; display: grid; justify-content: center; align-content: center;}
+#lemtip-5{grid-column:1 / -1; grid-row: 4 / 5; border:2px solid #555; display: grid; justify-content: left; align-content: center; padding-left:10px;}
+#tiptip-5{grid-column:1 / -1; grid-row: 6 ; border:2px solid #555; display: grid; justify-content: left; align-content: center; padding-left:10px; background: rgb(23,37,62);}
+
+#tiptip-5 p{font-weight: 500;}
+#lemtip-5 h2{letter-spacing: 2px; font-size: 2.5rem; font-weight: 700;}
+#lemtip-5 #preguntar, #lemtip-5 #comentar{font-weight: 700; font-size: 1.5rem; color:greenyellow; letter-spacing: 0.5rem; text-align: center; border-radius: 50%; border: 1px solid yellow;}
+
+#preguntar{background: #555;}#comentar{background: #333;}
+#durante-clase-2{border-radius: 50%; width: 50%; margin: 0px auto; border: 2px solid #777;}
 
 .fuera-6{
     grid-area: fuera-6;
