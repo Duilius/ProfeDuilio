@@ -8,6 +8,10 @@
     <link rel="icon" type="image/png" sizes="16x16" href="../img/icons8-queen-bee-16.png">
 	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Hind:wght@300;400;500;600;700&family=Onest:wght@200&display=swap" rel="stylesheet">
+
+
 	<!-- Hojas de Estilo -->
 	<!--<link rel="stylesheet" href="{{url_for('static', path='css/welcome.css')}}">-->
     <link rel="stylesheet" href="static/css/welcome.css">
@@ -24,13 +28,13 @@
     </div>
 	<div id="tres-areas">
         <div id="mate-prog">
-            <h3>Matemáticas | Programación</h3>
+            <h3 class="hind-light">Matemáticas | Programación</h3>
         </div>
         <div id="intel-artif">
-            <h3>Inteligencia Artificial</h3>
+            <h3 class="hind-light">Inteligencia Artificial</h3>
         </div>
         <div id="profe-duilio">
-            <h2>PROFEDUILIO</h2>
+            <h2 class="hind-regular">ProfeDuilio</h2>
         </div>
     </div>
 </div>
@@ -52,11 +56,11 @@
     </div>
 
     <div id="div-boton-descarga">
-        <a href="{{ url_for('static', path='pdf_mate/7-TIPs-MATE.pdf') }}" download="7-TIPs-MATE-profeduilio.pdf" id="boton-descargar">Descargar y Compartir GRATIS</a>
+        <a href="{{ url_for('static', path='pdf_mate/7-TIPs-MATE.pdf') }}" download="7-TIPs-MATE-profeduilio.pdf" id="boton-descargar" class="hind-regular">Descargar y Compartir GRATIS</a>
 
     </div>
     <div id="leer-estudiar-mate">
-        <p>Click para leer <a id="tips-resumen" href="/tips-resumen-estudiar-matematicas" hx-trigger='click' hx-get='/tips-resumen-estudiar-matematicas' hx-swap="none" onclick="window.open(this.href, '_blank'); return false;" >Resumen 7 Tips</a></p>
+        <p class="hind-light">👉Click para leer <a id="tips-resumen" href="/tips-resumen-estudiar-matematicas" hx-trigger='click' hx-get='/tips-resumen-estudiar-matematicas' hx-swap="none" onclick="window.open(this.href, '_blank'); return false;" >Resumen 7 Tips</a></p>
     <!--
         <p>Click para leer <a id="tips-completo" href="/tips-estudiar-matematicas" hx-trigger='click' hx-get='/tips-estudiar-matematicas' hx-swap="none" onclick="window.open(this.href, '_blank'); return false;" >Artículo Completo</a></p>
     -->

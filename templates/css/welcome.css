@@ -2,20 +2,44 @@
 body{background: #1a1a1a; color:#fff;}
 
 /*
+FUENTES
+*/
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color:#000;
+  }
+
+  .hind-light {
+    font-family: "Hind", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  .hind-regular {
+    font-family: "Hind", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+
+/*
 ESTILO CABECERA
 */
 #cabecera{
 	margin: 0px auto;
 	width: 100%;
-	border:1px solid wheat;
+	border:1px solid #555;
 	display: grid;
 	grid-template-columns: 20% 80%;
-	column-gap: 10px;
+	column-gap: 1px;
 	/*grid-auto-rows: auto;*/
 }
 
 	#foto-profeduilio{
-		border: 1px solid red;
+		border: 1px solid #555;
 		display: grid;
 		place-content: center;
 		font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -25,8 +49,8 @@ ESTILO CABECERA
 		}
 
 	#tres-areas{
-		width: 80%;
-		border: 1px solid red;
+		width: 100%;
+		/*border: 1px solid red;*/
 		display: grid;
 		grid-template-rows: mate-prog intel-artif profe-duilio;
 		place-content: center;
@@ -36,6 +60,7 @@ ESTILO CABECERA
 		#mate-prog{grid-template-areas: mate-prog; letter-spacing: 2px; line-height: 1px;}
 		#intel-artif{grid-template-areas: intel-artif; line-height: 1px;}
 		#profe-duilio{grid-template-areas: profe-duilio;}
+		#profe-duilio h2{font-weight: 700;}
 
 
 /*
@@ -61,13 +86,17 @@ ESTILO #ebook-free
 */
 #ebook-free{
 	/*border:1px solid rgba(255, 255, 255, 0.25);*/
+	display: grid;
 	text-align: center;
+	width: 50%;
+	
 }
 	#ebook-div{margin: 0px auto; text-align: center; padding-top: 40px;}
 	#div-boton-descarga{
 		padding-top: 20px;
 		text-align: center;
 		margin-top: 10px;
+		font-size: 1.25rem;
 	}
 	#boton-descargar{
 		color:white;
