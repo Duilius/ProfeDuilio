@@ -87,11 +87,13 @@ ESTILO #ebook-free
 #ebook-free{
 	/*border:1px solid rgba(255, 255, 255, 0.25);*/
 	display: grid;
+	grid-template-rows: 1fr;
 	text-align: center;
-	width: 50%;
+	width: 100%;
 	
 }
-	#ebook-div{margin: 0px auto; text-align: center; padding-top: 40px;}
+	#ebook-div{ padding-top: 40px;}
+		#ebook-div img{width: 100%;}
 	#div-boton-descarga{
 		padding-top: 20px;
 		text-align: center;
