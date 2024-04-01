@@ -241,8 +241,31 @@ DIVs DE TIPS
 
 .fuera-6{
     grid-area: fuera-6;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(5, auto);
+    min-height: auto;    
 }
+    #numtip-6{grid-column:1 / 1 ; grid-row: 1 / 4; border:1px dotted #555; display: grid; justify-content: center; align-content: center;}
+    #tittip-6{grid-column:2 / -1; grid-row: 2 ; border:2px solid #555; display: grid; justify-content: center; align-content: center; padding-left:10px;}
+    #img-fuera-clase{grid-column:2 / -1 ; grid-row: 3 / 4; border:1px dotted #555; display: grid; justify-content: center; align-content: center;}
+    #lemtip-6{grid-column:1 / -1; grid-row: 4 / 5; border:2px solid #555; display: grid; justify-content: left; align-content: center; padding-left:10px;}
+    #tiptip-6{grid-column:1 / -1; grid-row: 6 ; border:2px solid #555; display: grid; justify-content: left; align-content: center; padding-left:10px; background: rgb(53,69,82);}
+
+    #tiptip-6 p{font-weight: 500;}
+    #hand-down{font-size: 1.55rem;}
 
 .examenes-7{
-    grid-area: examenes-7;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(5, auto);
+    min-height: auto;    
 }
+    #numtip-7{grid-column:1 / 1 ; grid-row: 1 / 3; border:1px dotted #555; display: grid; justify-content: center; align-content: center;}
+    #img-examen{grid-column:2 / -1 ; grid-row: 1 / 3; border:1px dotted #555; display: grid; justify-content: center; align-content: center;}
+    #tittip-7{grid-column:1 / 1; grid-row: 4 / 5; border:2px solid #555; display: grid; justify-content: left; align-content: center; padding-left:10px;}
+    #lemtip-7{grid-column:2 / -1; grid-row: 4 / 5; border:2px solid #555; display: grid; justify-content: left; align-content: center; padding-left:10px;}
+    #tiptip-7{grid-column:1 / -1; grid-row: 6 ; border:2px solid #555; display: grid; justify-content: left; align-content: center; padding-left:10px; background: rgb(53,69,82);}
+
+    #tiptip-7 p{font-weight: 500;}
+    #hand-right{font-size: 1.75rem;}
