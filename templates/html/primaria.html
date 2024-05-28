@@ -3,42 +3,92 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+     
+    <script src="https://unpkg.com/htmx.org@1.8.4"></script>
+
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/icons8-queen-bee-16.png">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Hind:wght@300;400;500;600;700&family=Onest:wght@200&display=swap" rel="stylesheet">
+
+
 	<!-- Hojas de Estilo -->
-	<!--<link rel="stylesheet" href="{{url_for('static', path='css/welcome.css')}}">-->
-    <link rel="stylesheet" href="static/css/primaria.css">
+    <!--<link rel="stylesheet" href="static/css/primaria.css">-->
+    <link rel="stylesheet" href="{{url_for('static', path='css/grados.css')}}">
+	<link rel="stylesheet" href="{{url_for('static', path='css/primaria.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', path='css/grados_aritmetica.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', path='css/grados_algebra.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', path='css/grados_geometria.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', path='css/grados_trigonometria.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', path='css/grados_raz_mat.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', path='css/grados_estadistica.css')}}">
+
+    <script src="https://unpkg.com/hyperscript.org@0.9.12"></script>
 	<title>ProfeDuilio | Matemáticas | Primaria</title>
+
+    <style>
+        .triangulo {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent; /* Cambia el valor de acuerdo al tamaño del triángulo */
+    border-right: 50px solid transparent; /* Cambia el valor de acuerdo al tamaño del triángulo */
+    border-bottom: 100px solid red; /* Cambia el color y el valor de acuerdo al tamaño del triángulo */
+}
+
+    </style>
 </head>
 <body>
 
+<div id="content">
 
-<div id="quinto-p">
-    <div id="quinto">5°</div>
-    <div id="que-debes-saber-5">
-        <p>Qué debes saber si vas o estás en 5°</p>
+    <div id="nav">
+        <ul>
+            <li><a href="/primaria/curso?el_curso=ari" hx-target="#aside" hx-trigger="click" hx-get="/primaria/curso?el_curso=ari" hx-swap="innerHTML" class="nom-curso ari-amarillo">Aritm.</a></li>
+            <li><a href="/primaria/curso?el_curso=alg" hx-target="#aside" hx-trigger="click" hx-get="/primaria/curso?el_curso=alg" class="nom-curso alg-verde">Algebra</a></li>
+            <li><a href="/primaria/curso?el_curso=geo" hx-target="#aside" hx-trigger="click" hx-get="/primaria/curso?el_curso=geo" class="nom-curso geo-azul">Geom.</a></li>
+            <li><a href="/primaria/curso?el_curso=tri" hx-target="#aside" hx-trigger="click" hx-get="/primaria/curso?el_curso=tri" class="nom-curso tri-celeste">Trig.</a></li>
+            <li><a href="/primaria/curso?el_curso=raz" hx-target="#aside" hx-trigger="click" hx-get="/primaria/curso?el_curso=raz" class="nom-curso raz-negro">Raz. M.</a></li>
+            <li><a href="/primaria/curso?el_curso=est" hx-target="#aside" hx-trigger="click" hx-get="/primaria/curso?el_curso=est" class="nom-curso est-rojo">Estad.</a></li>
+        </ul>
     </div>
-    <div id="ejercicios-5">
-        <p>Ejercicios Resueltos</p>
-    </div>
-    <div id="coleccion-5">Colección de Ejercicios<br> PARA PRACTICAR</div>
-    <div id="descargar-5p">
-        <a href="#" id="btn-descarga-5p">DESCARGA GRATIS</a>
-    </div>
-</div>    
 
-<div id="mira-redes"></div>
+    <div id="fila2">
 
-<div id="sexto-p">
-    <div id="sexto">6°</div>
-    <div id="que-debes-saber-6">
-		<p>Qué debes saber si vas o estás en 6°</p>
-	</div>
-    <div id="ejercicios-6">
-		<p>Ejercicios Resueltos</p>
-	</div>
-    <div id="coleccion-6">Colección de Ejercicios<br> PARA PRACTICAR</div>
-    <div id="descargar-6p">
-        <a href="#" id="btn-descarga-5p">DESCARGA GRATIS</a>
+        <section id="aside">
+            <h3>El aside</h3>
+        </section>
+        
+        <section id="main">
+            <h3>El main</h3>
+            <div id="main-aritm"></div>
+            <!--
+            <div class="triangulo"></div>
+
+            <svg width="200" height="200">
+                 Triángulo -->
+                 <!--
+                <polygon points="100,10 40,190 160,190" fill="red" />
+                -->
+                
+                <!-- Texto en los vértices 
+                <text x="100" y="10" fill="black" font-size="12" text-anchor="middle">A</text>
+                <text x="40" y="190" fill="black" font-size="12" text-anchor="end">B</text>
+                <text x="160" y="190" fill="black" font-size="12" text-anchor="start">C</text>
+              </svg>
+            -->  
+              
+        </section>
+
+    </div>    
+
+    <!--
+    <div id="footer">
+        <h3>El Footer</h3>
     </div>
-</div>    
+    -->
+
+</div><!--Fin div#content-->
 
 </body>    
+</html>

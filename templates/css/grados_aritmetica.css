@@ -1,0 +1,7 @@
+
+.nivel-pri{border: 1px solid yellow; border-radius: 4px; padding: 4px 8px;color:aqua;}
+.nivel-sec{border: 1px solid cyan;   border-radius: 4px; padding: 4px 8px;color:yellow}
+
+.link-activo{background: orange; color: black; border: 2px dotted white; text-decoration: none; font-weight: 700;}
+
+

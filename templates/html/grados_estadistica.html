@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="{{url_for('static', path='css/grados_aritmetica.css')}}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grado Estadística</title>
+</head>
+<body>
+    
+    <p>Estadística</p>
+    <div id="grados-todos">
+
+        <ul class="grados">
+
+
+            <li><a href="/primaria/teoria-por-grado?curso=est&grado=tercero&nivel=secundaria" hx-target="#main" hx-trigger="click" hx-get="/primaria/teoria-por-grado?curso=est&grado=tercero&nivel=secundaria" hx-swap="innerHTML" class="links-grados nivel-sec"
+                _="
+                on click remove .link-activo from .links-grados
+                then 
+                    add .link-activo
+                "
+                >3° Sec</a></li>
+
+            <li><a href="/primaria/teoria-por-grado?curso=est&grado=cuarto&nivel=secundaria" hx-target="#main" hx-trigger="click" hx-get="/primaria/teoria-por-grado?curso=est&grado=cuarto&nivel=secundaria" hx-swap="innerHTML" class="links-grados nivel-sec"
+                _="
+                on click remove .link-activo from .links-grados
+                then 
+                    add .link-activo
+                "
+                >4° Sec</a></li>
+
+            <li><a href="/primaria/teoria-por-grado?curso=est&grado=quinto&nivel=secundaria" hx-target="#main" hx-trigger="click" hx-get="/primaria/teoria-por-grado?curso=est&grado=quinto&nivel=secundaria" hx-swap="innerHTML" class="links-grados nivel-sec"
+                _="
+                on click remove .link-activo from .links-grados
+                then 
+                    add .link-activo
+                "
+                >5° Sec</a></li>
+        </ul>
+
+    </div>
+
+</body>
+</html>

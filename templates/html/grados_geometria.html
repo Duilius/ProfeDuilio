@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="{{url_for('static', path='css/grados_aritmetica.css')}}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grados Geometría</title>
+</head>
+<body>
+    
+    <p>Geometría</p>
+    <div id="grados-todos">
+
+        <ul class="grados">
+            <li><a href="/primaria/teoria-por-grado?curso=geo&grado=cinco&nivel=primaria" hx-target="#main" hx-trigger="click" hx-get="/primaria/teoria-por-grado?curso=geo&grado=cinco&nivel=primaria" hx-swap="innerHTML" class="links-grados nivel-pri"
+                _="
+                on click remove .link-activo from .links-grados
+                then 
+                    add .link-activo
+                "
+               >
+                5° Prim</a></li>
+
+            <li><a href="/primaria/teoria-por-grado?curso=geo&grado=sexto&nivel=primaria" hx-target="#main" hx-trigger="click" hx-get="/primaria/teoria-por-grado?curso=geo&grado=sexto&nivel=primaria" hx-swap="innerHTML" class="links-grados nivel-pri"
+                _="
+                on click remove .link-activo from .links-grados
+                then 
+                    add .link-activo
+                "
+                >6° Prim</a></li>
+
+            <li><a href="/primaria/teoria-por-grado?curso=geo&grado=primero&nivel=secundaria" hx-target="#main" hx-trigger="click" hx-get="/primaria/teoria-por-grado?curso=geo&grado=primero&nivel=secundaria" hx-swap="innerHTML" class="links-grados nivel-sec"
+                _="
+                on click remove .link-activo from .links-grados
+                then 
+                    add .link-activo
+                "
+                >1° Sec</a></li>
+
+            <li><a href="/primaria/teoria-por-grado?curso=geo&grado=segundo&nivel=secundaria" hx-target="#main" hx-trigger="click" hx-get="/primaria/teoria-por-grado?curso=geo&grado=segundo&nivel=secundaria" hx-swap="innerHTML" class="links-grados nivel-sec"
+                _="
+                on click remove .link-activo from .links-grados
+                then 
+                    add .link-activo
+                "
+                >2° Sec</a></li>
+
+            <li><a href="/primaria/teoria-por-grado?curso=geo&grado=tercero&nivel=secundaria" hx-target="#main" hx-trigger="click" hx-get="/primaria/teoria-por-grado?curso=geo&grado=tercero&nivel=secundaria" hx-swap="innerHTML" class="links-grados nivel-sec"
+                _="
+                on click remove .link-activo from .links-grados
+                then 
+                    add .link-activo
+                "
+                >3° Sec</a></li>
+
+            <li><a href="/primaria/teoria-por-grado?curso=geo&grado=cuarto&nivel=secundaria" hx-target="#main" hx-trigger="click" hx-get="/primaria/teoria-por-grado?curso=geo&grado=cuarto&nivel=secundaria" hx-swap="innerHTML" class="links-grados nivel-sec"
+                _="
+                on click remove .link-activo from .links-grados
+                then 
+                    add .link-activo
+                "
+                >4° Sec</a></li>
+
+            <li><a href="/primaria/teoria-por-grado?curso=geo&grado=quinto&nivel=secundaria" hx-target="#main" hx-trigger="click" hx-get="/primaria/teoria-por-grado?curso=geo&grado=quinto&nivel=secundaria" hx-swap="innerHTML" class="links-grados nivel-sec"
+                _="
+                on click remove .link-activo from .links-grados
+                then 
+                    add .link-activo
+                "
+                >5° Sec</a></li>
+        </ul>
+
+    </div>
+
+</body>
+</html>

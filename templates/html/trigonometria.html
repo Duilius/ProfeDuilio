@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProfeDuilio - Trigonometría</title>
+    <link rel="stylesheet" href="{{url_for('static', path='css/trigonometria.css')}}">
+    <script src="{{url_for('static', path='js/trigonometria.js')}}" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>TRIGONOMETRÍA</h1>
+        <h2>Conceptos fundamentales</h2>
+        <p id="mensaje">Aprende a tu ritmo con nuestras lecciones gratuitas y videos en YouTube. Prepárate para dominar la trigonometría con contenido claro y accesible.</p>
+        <nav>
+            <ul>
+                <li><a href="#opcion1">Ejercicios</a></li>
+                <li><a href="#" id="opcion2">Teoría</a></li>
+            </ul>
+        </nav>
+        <div id="contenido1" class="contenido">
+            <div class="columna">
+                <p>Relaciones Trigonométrias en Triángulos Rectángulos Notables</p>
+            </div>
+            <div class="columna">
+                <p>Suscríbete al Canal y entra a la Play List</p>
+                <button class="youtube-button"><a href="https://www.youtube.com/playlist?list=PLu4HTZYHaueRU6HeJLzjOw5KeOvk-Iq9c">YouTube</a></button>
+            </div>
+        </div>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="columna">
+                    <p>Contenido de la columna 1 de la Opción 2.</p>
+                </div>
+                <div class="columna">
+                    <p>Contenido de la columna 2 de la Opción 2.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

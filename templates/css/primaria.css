@@ -1,30 +1,96 @@
-
-#quinto-p{
-    display: grid;
-    grid-template-rows: 30% 70%;
-    grid-template-areas: 
-        "quinto que-debes-saber-5"
-        "ejercicios-5"
-        "coleccion-5"
-        "descargar-5p"        
-        ;
+#content{
+    height: 100vh;
 }
-    #quinto{
-        grid-template-areas: quinto;
 
+/* Estilos para pantallas con ancho mayor a 600px */
+@media (min-width: 600px) {
+    #nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #333; /* Color de fondo para ilustrar */
+        padding: 10px; /* Ajusta el espaciado según sea necesario */
     }
-    #que-debes-saber-5{
-        grid-template-areas: que-debes-saber-5;
+
+    #fila2 {
+        width: 100%;
+        height: calc(100vh - (40px + 140px)); /* Restar la altura del nav y del footer */
+        display: grid;
+        grid-template-columns: 20% 80%;
+        grid-template-areas: 
+            "aside main";
     }
-    #ejercicios-5{
-        grid-template-areas: ejrcicios-5;
+
+    #main {
+        width: 100%;
+        height: 100%;
     }
-    #coleccion-5{
-        grid-template-areas: coleccion-5;
+
+    #aside {
+        width: 100%;
+        height: 100%;
     }
-    #descargar-5p{
-        grid-template-areas: descargar-5p;
+
+    #footer {
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        height: 140px;
+        background-color: #333; /* Color de fondo para ilustrar */
     }
-    #bto-descarga-5p{
-        grid-template-areas: btn-descarga-5p;
+}
+
+/* Estilos para pantallas con ancho menor o igual a 600px */
+@media (max-width: 600px) {
+    #nav {
+        position: fixed;
+        bottom: 0;
+        width: 97%;
+        background-color: #333; /* Color de fondo para ilustrar */
+        height: 50px;
+        border: 1px solid red;
+        text-align: left;
     }
+        #nav ul{text-align: left; border: 1px solid aqua; width: 90%; padding-left: -50px;}
+        #nav ul li{ display: inline-block;}
+
+    #fila2 {
+        width: 100%;
+        /*height: calc(100vh - 40px); /* Restar la altura del nav */
+        display: grid;
+        grid-template-rows: auto 75px;
+        grid-template-areas: 
+        "main"
+        "aside";
+        border:1px solid red;
+        height: calc(100vh - 75px);
+    }
+
+    #main {
+        width: 100%;
+        /*height: calc(100% - 40px);*/ /* Restar la altura del aside*/ 
+        background: #777;
+        top: 0px;
+        grid-area: main;
+        
+    }
+
+    #aside {
+        width: 100%;
+        /*bottom: 0;*/
+        background: black;
+        grid-area: aside;
+        color: white;
+    }
+}
+
+
+/*MENU NAVEGACIÓN: CURSOS*/
+.nom-curso{border:1px solid rgba(255,255,255,0.25); border-radius: 4px; font-size: 0.85rem; padding:4px 8px}
+
+.ari-amarillo{background: yellow; color:black }
+.alg-verde{background: greenyellow; color: black; }
+.geo-azul{background: blue; color:white}
+.tri-celeste{background: cyan; color:black }
+.raz-negro{background: black; color:white}
+.est-rojo{background: red; color:white}
