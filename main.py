@@ -104,6 +104,13 @@ async def preuniversitaria(request:Request):
 async def trigonometria(request:Request):
     return templates.TemplateResponse("html/trigonometria.html", {"request":request})
 
+##############
+#ESTADISTICA
+##############
+@app.get("/estadistica", response_class=HTMLResponse)
+async def estadistica(request:Request):
+    return templates.TemplateResponse("html/estadistica.html", {"request":request})
+
 
 ##################
 # BLOG MATEMÁTICAS

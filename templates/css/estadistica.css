@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+}
+
+h1, h2 {
+    margin: 0.5em 0;
+}
+h2{color: #ff69b4;}
+
+p#mensaje {
+    color: #fff; /* Color rosa para los párrafos */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    border:1px solid white; border-radius: 4px;
+    background: white;
+    padding: 6px;
+}
+
+.contenido {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2em;
+}
+
+.columna {
+    width: 45%;
+}
+
+.youtube-button {
+    background-color: #ff0000;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.youtube-button a{color:#ffffff; text-decoration: none;}
+
+.youtube-button:hover {
+    background-color: #cc0000;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.5s;
+}
+
+.modal-content {
+    background-color: #333333;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
