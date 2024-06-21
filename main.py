@@ -111,6 +111,76 @@ async def trigonometria(request:Request):
 async def estadistica(request:Request):
     return templates.TemplateResponse("html/estadistica.html", {"request":request})
 
+#######################
+#ARITMETICA 6° PRIMARIA
+#######################
+@app.get("/aritmetica6", response_class=HTMLResponse)
+async def aritmetica6(request:Request):
+    return templates.TemplateResponse("html/aritmetica6.html", {"request":request})
+
+
+#######################
+#ARITMETICA 5° PRIMARIA
+#######################
+@app.get("/aritmetica5", response_class=HTMLResponse)
+async def aritmetica5(request:Request):
+    return templates.TemplateResponse("html/aritmetica5.html", {"request":request})
+
+#########################
+#RAZONAMIENTO 6° PRIMARIA
+#########################
+@app.get("/razonamiento6", response_class=HTMLResponse)
+async def razonamiento6(request:Request):
+    return templates.TemplateResponse("html/razonamiento6.html", {"request":request})
+
+#########################
+#RAZONAMIENTO 5° PRIMARIA
+#########################
+@app.get("/razonamiento5", response_class=HTMLResponse)
+async def razonamiento5(request:Request):
+    return templates.TemplateResponse("html/razonamiento5.html", {"request":request})
+
+###########################
+#RAZONAMIENTO 1° SECUNDARIA
+###########################
+@app.get("/razonamiento1", response_class=HTMLResponse)
+async def razonamiento1(request:Request):
+    return templates.TemplateResponse("html/razonamiento1.html", {"request":request})
+
+#########################
+#ARITMETICA 1° SECUNDARIA
+#########################
+@app.get("/aritmetica1", response_class=HTMLResponse)
+async def aritmetica1(request:Request):
+    return templates.TemplateResponse("html/aritmetica1.html", {"request":request})
+
+#################
+# VIDEOS YOUTUBE
+#################
+@app.get("/videos-youtube", response_class=HTMLResponse)
+async def tips(request:Request):
+    return templates.TemplateResponse("html/blog/videos-youtube.html", {"request":request})
+
+#################
+# PARABOLA
+#################
+@app.get("/parabola", response_class=HTMLResponse)
+async def tips(request:Request):
+    return templates.TemplateResponse("html/blog/parabola.html", {"request":request})
+
+##################
+# PLANO CARTESIANO
+##################
+@app.get("/plano_cartesiano", response_class=HTMLResponse)
+async def tips(request:Request):
+    return templates.TemplateResponse("html/blog/plano_cartesiano.html", {"request":request})
+
+##################
+# PLANO CARTESIANO - distancia
+##################
+@app.get("/plano_cartesiano_distancia", response_class=HTMLResponse)
+async def tips(request:Request):
+    return templates.TemplateResponse("html/blog/plano_cartesiano_distancia.html", {"request":request})
 
 ##################
 # BLOG MATEMÁTICAS
@@ -127,3 +197,16 @@ async def tips(request:Request):
 @app.get("/tips-completo-estudiar-matematicas", response_class=HTMLResponse)
 async def tips(request:Request):
     return templates.TemplateResponse("html/blog/tips-completo-estudiar-matematicas.html", {"request":request})
+
+
+#######
+#GALERÍA DE TULONESS (5S SATELITE)
+#######
+@app.get("/tulonesss", response_class=HTMLResponse)
+async def tulonesss(request:Request):
+    return templates.TemplateResponse("html/blog/tulonesss.html", {"request":request})
+
+
+@app.get("/galeria-tulonesss")
+async def galeria_tulonesss(request:Request):
+    return templates.TemplateResponse("html/blog/galeria-tulonesss.html", {"request":request})
