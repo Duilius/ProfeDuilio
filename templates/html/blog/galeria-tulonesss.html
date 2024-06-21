@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Fotos - Promoción 2024</title>
+    <link rel="stylesheet" href="{{url_for('static', path='css/galeria-tulonesss.css')}}">
+</head>
+<body>
+    <header>
+        <div class="logo">Promoción 2024</div>
+        <nav>
+            <ul>
+                <li><a href="/tulonesss">Inicio</a></li>
+                <li><a href="/galeria-tulonesss" target="_new" hx-target="none" hx-trigger="click" hx-get="/galeria-tulonesss">Galería</a></li>
+                <li><a href="#">Actividades</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="gallery-page">
+        <h2>Galería de Fotos</h2>
+        <div class="gallery-container">
+            <!-- Aquí irán las fotos -->
+            <div class="photo"><img src="{{url_for('static', path='img/tulonesss-1.jpg')}}" alt="Tulonesss 1"></div>
+            <div class="photo"><img src="{{url_for('static', path='img/tulonesss-2.jpg')}}" alt="Tulonesss 2"></div>
+            <div class="photo"><img src="{{url_for('static', path='img/tulonesss-3.jpg')}}" alt="Tulonesss 3"></div>
+            <div class="photo"><img src="{{url_for('static', path='img/tulonesss-4.jpg')}}" alt="Tulonesss 4"></div>
+            <div class="photo"><img src="{{url_for('static', path='img/tulonesss-5.jpg')}}" alt="Tulonesss 5"></div>
+            <!-- Agrega más fotos aquí -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Promoción 2024. Todos los derechos reservados.</p>
+        <div class="social-media">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de la Promoción 2024</title>
+    <link rel="stylesheet" href="{{url_for('static', path='css/tulonesss.css')}}">
+</head>
+<body>
+    <header>
+        <div class="logo">Promoción 2024</div>
+        <nav>
+            <ul>
+                <li><a href="/tulonesss">Inicio</a></li>
+                
+                <li><a href="/galeria-tulonesss" target="_new" hx-target="none" hx-trigger="click" hx-get="/galeria-tulonesss">Galería</a></li>
+
+                <li><a href="#">Actividades</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar...">
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1 style="color:blue">Bienvenidos a la página oficial de la Promoción 2024</h1>
+        <h2 style="color: aqua; font-weight: 700;">TULONESSS</h2>
+        <a href="galeria-tulonesss" class="button" target="_new" hx-target="none" hx-trigger="click" hx-get="/galeria-tulonesss">Ver Fotos</a> <!-- Cambiado a un enlace -->
+        <button class="button">Unirse a Actividades</button>
+    </section>
+
+    <!-- Otras secciones -->
+
+    <footer>
+        <p>&copy; 2024 Promoción 2024. Todos los derechos reservados.</p>
+        <div class="social-media">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+        </div>
+    </footer>
+</body>
+</html>

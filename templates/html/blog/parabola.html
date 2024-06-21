@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráfica de una Parábola</title>
+    <style>
+        canvas {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h2>Gráfica de una Parábola</h2>
+    <canvas id="parabolaGraph" width="600" height="400"></canvas>
+    <script>
+        const canvas = document.getElementById('parabolaGraph');
+        const ctx = canvas.getContext('2d');
+
+        // Dibujar ejes
+        ctx.beginPath();
+        ctx.moveTo(300, 0);
+        ctx.lineTo(300, 400);
+        ctx.moveTo(0, 200);
+        ctx.lineTo(600, 200);
+        ctx.stroke();
+
+        // Dibujar parábola
+        ctx.strokeStyle = 'green';
+        ctx.beginPath();
+        for (let x = -300; x <= 300; x++) {
+            let y = (x * x) / 100;
+            ctx.lineTo(300 + x, 200 - y);
+        }
+        ctx.stroke();
+    </script>
+</body>
+</html>

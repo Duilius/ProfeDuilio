@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plano Cartesiano Interactivo</title>
+    <style>
+        #cartesianPlane {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h2>Plano Cartesiano Interactivo</h2>
+    <canvas id="cartesianPlane" width="600" height="400"></canvas>
+    <script>
+        const canvas = document.getElementById('cartesianPlane');
+        const ctx = canvas.getContext('2d');
+
+        function drawCartesianPlane() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.beginPath();
+
+            // Ejes
+            ctx.moveTo(300, 0);
+            ctx.lineTo(300, 400);
+            ctx.moveTo(0, 200);
+            ctx.lineTo(600, 200);
+            ctx.stroke();
+
+            // Función
+            ctx.strokeStyle = 'blue';
+            ctx.beginPath();
+            for (let x = -300; x <= 300; x++) {
+                let y = 50 * Math.sin(x / 50);
+                ctx.lineTo(300 + x, 200 - y);
+            }
+            ctx.stroke();
+        }
+
+        drawCartesianPlane();
+    </script>
+</body>
+</html>
