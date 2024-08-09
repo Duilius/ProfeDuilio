@@ -210,3 +210,12 @@ async def tulonesss(request:Request):
 @app.get("/galeria-tulonesss")
 async def galeria_tulonesss(request:Request):
     return templates.TemplateResponse("html/blog/galeria-tulonesss.html", {"request":request})
+
+
+
+#######
+#POLITICA DE PRIVACIDAD
+#######
+@app.get("/politica-privacidad", response_class=HTMLResponse)
+async def politica(request:Request):
+    return templates.TemplateResponse("html/politica-privacidad.html", {"request":request})
