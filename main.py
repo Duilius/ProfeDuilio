@@ -219,3 +219,12 @@ async def galeria_tulonesss(request:Request):
 @app.get("/politica-privacidad", response_class=HTMLResponse)
 async def politica(request:Request):
     return templates.TemplateResponse("html/politica-privacidad.html", {"request":request})
+
+
+
+#######
+#ZOOM CLASES VIRTUALES POR PARO <<<=====<<<<<<
+#######
+@app.get("/zoomProfeDuilio", response_class=HTMLResponse)
+async def zoomProfeDuilio(request:Request):
+    return templates.TemplateResponse("html/zoomProfeDuilio.html", {"request":request})
