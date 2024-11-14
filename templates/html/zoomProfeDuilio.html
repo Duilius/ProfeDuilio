@@ -396,17 +396,17 @@
         </div>
 
         <div class="tabs">
-            <button class="tab active" data-day="lunes">Lunes</button>
+            <button class="tab" data-day="lunes">Lunes</button>
             <button class="tab" data-day="martes">Martes</button>
             <button class="tab" data-day="miercoles">Miércoles</button>
-            <button class="tab" data-day="jueves">Jueves</button>
+            <button class="tab active" data-day="jueves">Jueves</button>
         </div>
 
         <div class="schedule-content">
-            <div class="day-schedule active" id="lunes"></div>
+            <div class="day-schedule" id="lunes"></div>
             <div class="day-schedule" id="martes"></div>
             <div class="day-schedule" id="miercoles"></div>
-            <div class="day-schedule" id="jueves"></div>
+            <div class="day-schedule active" id="jueves"></div>
         </div>
     </div>
 
@@ -571,7 +571,7 @@
             
             // Mostrar el día actual si corresponde
             const { currentDay } = getCurrentTimeInfo();
-            const dayMap = { 1: 'lunes', 2: 'martes', 3: 'miercoles', 4: 'jueves', 5: 'viernes' };
+            const dayMap = { 1: 'lunes', 2: 'martes', 3: 'miercoles', 4: 'jueves' };
             if (dayMap[currentDay]) {
                 document.querySelector(`[data-day="${dayMap[currentDay]}"]`).click();
             }
