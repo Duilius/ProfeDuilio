@@ -453,6 +453,16 @@
                 { time: '11:55 - 12:40', code: 'RM-2S', topic: ' ..... ', zoomLink:'https://us05web.zoom.us/j/85044044145?pwd=hsDi8Po76DkbnaIuSBVDgWEdUJsZNs.1' },
                 { time: '13:00 - 13:45', code: 'AR-6P', topic: ' .....', zoomLink: 'https://us05web.zoom.us/j/81240050527?pwd=e2SlTJihX1aMiUlYEmPtqJZaRnVN0Z.1'},
                 { time: '13:45 - 14:30', code: 'AR-6P', topic: ' ..... ', zoomLink: 'https://us05web.zoom.us/j/85884889163?pwd=puqmnlUQbJTxCdzs7MPFFiIDmFy9AT.1'}
+            ],
+            jueves: [
+                { time: '8:00 - 8:45', code: 'AR-6P', topic: 'Sist. de Numeración ...', zoomLink: 'https://us05web.zoom.us/j/88936771555?pwd=D4bTRQLP8c3jrCxeFXzgB6jCS2Q3TJ.1'},
+                { time: '8:45 - 9:30', code: 'AR-6P', topic: ' .....  ', zoomLink: 'https://us05web.zoom.us/j/88936771555?pwd=D4bTRQLP8c3jrCxeFXzgB6jCS2Q3TJ.1'},
+                { time: '09:30 - 10:15', code: 'EST-5S', topic: ' Probabilidad Condicional ', zoomLink: 'https://us05web.zoom.us/j/82105615668?pwd=CnhyNxkkHp5OK4WGaMabTrE1bFBVT3.1'},
+                { time: '10:25 - 11:10', code: 'RM 6P', topic: ' ..... ', zoomLink: 'https://us05web.zoom.us/j/87370830926?pwd=JEjb0YWN5uppWjaHqrLQypKXxPoJJN.1'},
+                { time: '11:10 - 11:55', code: 'RM-6P', topic: ' ..... ', zoomLink: 'https://us05web.zoom.us/j/87370830926?pwd=JEjb0YWN5uppWjaHqrLQypKXxPoJJN.1'},
+                { time: '11:55 - 12:40', code: 'EST-3S', topic: ' Probabilidad Condicional ', zoomLink:'https://us05web.zoom.us/j/83166066829?pwd=jBLKlc8ikiDjaur8GIuZoPjJBYQvJa.1' },
+                { time: '13:00 - 13:45', code: 'RM-5P', topic: ' .....', zoomLink: 'https://us05web.zoom.us/j/88255401998?pwd=az99QdMtQXtzWoLt1bL3LXyObBcZlB.1'},
+                { time: '13:45 - 14:30', code: 'RM-5P', topic: ' ..... ', zoomLink: 'https://us05web.zoom.us/j/88255401998?pwd=az99QdMtQXtzWoLt1bL3LXyObBcZlB.1'}
             ]
         };
     
@@ -559,7 +569,7 @@
             
             // Mostrar el día actual si corresponde
             const { currentDay } = getCurrentTimeInfo();
-            const dayMap = { 1: 'lunes', 2: 'martes', 3: 'miercoles' };
+            const dayMap = { 1: 'lunes', 2: 'martes', 3: 'miercoles', 4: 'jueves', 5: 'viernes' };
             if (dayMap[currentDay]) {
                 document.querySelector(`[data-day="${dayMap[currentDay]}"]`).click();
             }
