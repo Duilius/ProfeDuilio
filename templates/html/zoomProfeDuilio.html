@@ -399,14 +399,16 @@
             <button class="tab" data-day="lunes">Lunes</button>
             <button class="tab" data-day="martes">Martes</button>
             <button class="tab" data-day="miercoles">Miércoles</button>
-            <button class="tab active" data-day="jueves">Jueves</button>
+            <button class="tab" data-day="jueves">Jueves</button>
+            <button class="tab active" data-day="viernes">Vienes</button>
         </div>
 
         <div class="schedule-content">
             <div class="day-schedule" id="lunes"></div>
             <div class="day-schedule" id="martes"></div>
             <div class="day-schedule" id="miercoles"></div>
-            <div class="day-schedule active" id="jueves"></div>
+            <div class="day-schedule" id="jueves"></div>
+            <div class="day-schedule active" id="viernes"></div>
         </div>
     </div>
 
@@ -465,6 +467,13 @@
                 { time: '11:55 - 12:40', code: 'EST-3S', topic: ' Probabilidad Condicional ', zoomLink:'https://us05web.zoom.us/j/83166066829?pwd=jBLKlc8ikiDjaur8GIuZoPjJBYQvJa.1' },
                 { time: '13:00 - 13:45', code: 'RM-5P', topic: ' .....', zoomLink: 'https://us05web.zoom.us/j/88255401998?pwd=az99QdMtQXtzWoLt1bL3LXyObBcZlB.1'},
                 { time: '13:45 - 14:30', code: 'RM-5P', topic: ' ..... ', zoomLink: 'https://us05web.zoom.us/j/88255401998?pwd=az99QdMtQXtzWoLt1bL3LXyObBcZlB.1'}
+            ],
+            viernes: [
+                { time: '8:00 - 8:45', code: 'T-3S', topic: ' Ejercicios ... ', zoomLink: 'https://us05web.zoom.us/j/82098545080?pwd=Zedl4WFzdQzT07T0zItDYrRl3djKXV.1'},
+                { time: '8:45 - 9:30', code: 'RM-1S', topic: ' Ejercicios .... ', zoomLink: 'https://us05web.zoom.us/j/82765154286?pwd=ZaeSUfhvGYxr8smm4A32o8PwDqlosb.1'},
+                { time: '09:30 - 10:15', code: 'RM - 1S', topic: ' Ejercicios ... ', zoomLink: 'https://us05web.zoom.us/j/82765154286?pwd=ZaeSUfhvGYxr8smm4A32o8PwDqlosb.1'},
+                { time: '10:25 - 11:10', code: 'A 5P', topic: ' ..... ', zoomLink: 'https://us05web.zoom.us/j/85139020939?pwd=ZXm5kAOfP0gjNgXlZpQYL7aAgF2aQ0.1'},
+                { time: '11:55 - 12:40', code: 'T-3S', topic: ' ..... ', zoomLink: 'https://us05web.zoom.us/j/82098545080?pwd=Zedl4WFzdQzT07T0zItDYrRl3djKXV.1'}
             ]
         };
     
@@ -571,7 +580,7 @@
             
             // Mostrar el día actual si corresponde
             const { currentDay } = getCurrentTimeInfo();
-            const dayMap = { 1: 'lunes', 2: 'martes', 3: 'miercoles', 4: 'jueves' };
+            const dayMap = { 1: 'lunes', 2: 'martes', 3: 'miercoles', 4: 'jueves', 5:'viernes' };
             if (dayMap[currentDay]) {
                 document.querySelector(`[data-day="${dayMap[currentDay]}"]`).click();
             }
